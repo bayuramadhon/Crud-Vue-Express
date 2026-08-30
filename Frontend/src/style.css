@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --color-bg: #F1F3F5;
+  --color-surface: #FFFFFF;
+  --color-border: #E2E6EA;
+  --color-text: #1F2933;
+  --color-text-muted: #6B7684;
+  --color-accent: #B8742F;
+  --color-accent-dark: #8F5B24;
+  --color-accent-soft: #F4E4D2;
+  --color-danger: #C0392B;
+  --color-danger-soft: #F8E3E0;
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; }
+body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; }
+
+.btn { font-family: inherit; font-size: 0.88rem; font-weight: 600; padding: 0.6rem 1.1rem; border-radius: 8px; border: 1px solid transparent; cursor: pointer; }
+.btn-primary { background: var(--color-accent); color: white; }
+.btn-primary:hover { background: var(--color-accent-dark); }
+.btn-ghost { background: transparent; border-color: var(--color-border); color: var(--color-text); }
+.btn-ghost:hover { background: var(--color-bg); }
+.btn-danger { background: var(--color-danger); color: white; }
+.btn-danger-ghost { background: transparent; border-color: var(--color-danger-soft); color: var(--color-danger); }
+.btn-danger-ghost:hover { background: var(--color-danger-soft); }
+.btn-sm { padding: 0.4rem 0.75rem; font-size: 0.8rem; }
